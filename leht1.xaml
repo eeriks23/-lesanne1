@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="ulesanne1.leht1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ulesanne1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FF006FC1"></Rectangle>
+        <Pivot VerticalAlignment="Center">
+            <PivotItem Header="Pivot">
+            </PivotItem>
+            <PivotItem Header="Pivot">
+            </PivotItem>
+            <PivotItem Header="Pivot">
+            </PivotItem>
+            <PivotItem Header="Pivot">
+            </PivotItem>
+            <PivotItem Header="Pivot">
+            </PivotItem>
+        </Pivot>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="20,0,0,0">
+            <TextBlock Text="Page Title" FontSize="30"></TextBlock>
+        </StackPanel>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="2*" ></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.2*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="/Assets/pom.png" VerticalAlignment="Top" Stretch="Fill" Margin="5,0,0,5"></Image>
+                <Image Source="/Assets/peletis.png" Grid.Row="1" VerticalAlignment="Top" Stretch="Fill" Margin="5,5,0,0"></Image>
+            </Grid>
+            <Image Source="/Assets/auh.png" VerticalAlignment="Top" Stretch="Fill" Margin="0,0,5,0"></Image>
+        </Grid>
+
+
+
+
+    </Grid>
+</Page>
